@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Fooddddd</title>
+<link rel="stylesheet" href="m.css">
+</head>
+
+<body>
+
+<header></header>
+    <nav>
+        <ul class="menu">
+            <li>Stuff
+                <ul class="submenu">
+                    <li onclick="loadCategory('pizza')">Pizza</li>
+                    <li onclick="loadCategory('drinks')">Drinks</li>
+                </ul>
+            </li>
+            <li>yes stuff
+                <ul class="submenu">
+                    <li onclick="loadCategory('burger')">Burger</li>
+                    <li onclick="loadCategory('dessert')">Dessert</li>
+                </ul>
+            </li>
+            <li>percaya bro
+			                <ul class="submenu">
+                    <li onclick="loadCategory('burger')">Burger</li>
+                    <li onclick="loadCategory('dessert')">Dessert</li>
+                </ul>
+				</li>
+            <li>it stuff
+                <ul class="submenu">
+                    <li onclick="loadCategory('burger')">Burger</li>
+                    <li onclick="loadCategory('dessert')">Dessert</li>
+                </ul>
+				</li>
+            <li>no lie
+                <ul class="submenu">
+                    <li onclick="loadCategory('burger')">Burger</li>
+                    <li onclick="loadCategory('dessert')">Dessert</li>
+                </ul</li>
+            <li>fo sho
+                <ul class="submenu">
+                    <li onclick="loadCategory('burger')">Burger</li>
+                    <li onclick="loadCategory('dessert')">Dessert</li>
+                </ul>
+				</li>
+        </ul>
+    </nav>
+
+
+<main>
+    <section id="products"></section>
+
+    <aside class="cart">
+        <h2>🛒 Cart</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </aside>
+</main>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h2>✅ Thank You!</h2>
+        <p>Your order has been placed.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+<footer>Finger lickin gooood</footer>
+<script src="m.js"></script>
+</body>
+</html>
